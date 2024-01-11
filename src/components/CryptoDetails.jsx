@@ -49,7 +49,7 @@ const CryptoDetails = () => {
         {
             title: "24h Volume",
             value: `$ ${
-                cryptoDetails?.volume && millify(cryptoDetails?.volume)
+                cryptoDetails?.24hVolume && millify(cryptoDetails?.24hVolume)
             }`,
             icon: <ThunderboltOutlined />,
         },
