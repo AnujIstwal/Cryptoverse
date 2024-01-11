@@ -4,7 +4,7 @@ import { Layout, Typography, Space } from "antd";
 
 import {
     Navbar,
-    Exchanges,
+    Supply,
     Home,
     Cryptocurrencies,
     CryptoDetails,
@@ -22,11 +22,7 @@ const App = () => {
                     <div className="routes">
                         <Routes>
                             <Route exact path="/" element={<Home />} />
-                            <Route
-                                exact
-                                path="/exchanges"
-                                element={<Exchanges />}
-                            />
+                            <Route exact path="/supply" element={<Supply />} />
                             <Route
                                 exact
                                 path="/cryptocurrencies"
@@ -52,7 +48,7 @@ const App = () => {
                     </Typography.Title>
                     <Space>
                         <Link to="/">Home</Link>
-                        <Link to="/exchanges">Exchanges</Link>
+                        <Link to="/supply">Supply</Link>
                         <Link to="/news">News</Link>
                     </Space>
                 </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Chart, registerables } from "chart.js";
+
 import { Line } from "react-chartjs-2";
 import { Col, Row, Typography } from "antd";
 
@@ -42,6 +44,8 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         },
     };
 
+    Chart.register(...registerables);
+    
     return (
         <>
             <Row className="chart-header">
